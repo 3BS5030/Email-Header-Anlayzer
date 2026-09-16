@@ -1,0 +1,26 @@
+Received: from mail-relay-1.carrier.example (mail-relay-1.carrier.example [10.5.5.10])
+	by mx-gw.examplecorp.net (Postfix) with ESMTP id ABC123
+	for <victim@examplecorp.net>; Mon, 15 Sep 2026 08:31:05 +0000 (UTC)
+Received: from mail.example.com (sndr-2026-3.example.com [192.0.2.10])
+	by mail-relay-1.carrier.example (Postfix) with ESMTPS id XYZ789
+	for <victim@examplecorp.net>; Mon, 15 Sep 2026 08:30:58 +0000 (UTC)
+Date: Mon, 15 Sep 2026 08:30:45 +0000
+From: "Acme Invoices" <billing@mail.example.com>
+Reply-To: "Acme Collections" <payments@acme-billing-att.example>
+To: victim@examplecorp.net
+Message-ID: <20260915083045.EXMPL1000000001@mail.example.com>
+Return-Path: <bounce-EHLOX@mail.example.com>
+Authentication-Results: mx-gw.examplecorp.net;
+	dkim=pass header.i=@mail.example.com header.s=sel1 header.b=abcdef;
+	spf=pass (sender is authorized) smtp.mailfrom=bounce-EHLOX@mail.example.com smtp.client_ip=192.0.2.10; dmarc=pass (p=REJECT) header.from=billing@mail.example.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mail.example.com; s=sel1;
+	t=1776332345; bh=abcd1234=; h=From:Reply-To:To:Subject; b=XYZabc123==
+Received-SPF: pass (mail.example.com: domain of bounce-EHLOX@mail.example.com designates 192.0.2.10 as permitted sender) client-ip=192.0.2.10; envelope-from=bounce-EHLOX@mail.example.com; helo=mail.example.com; receiver=examplecorp.net
+Subject: Invoice #88213 -- payment reminder
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+
+Hello,
+
+Please pay your invoice.

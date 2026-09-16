@@ -1,0 +1,13 @@
+Received: from ns1.paypal-secure-update.example (ns1.paypal-secure-update.example [198.51.100.77])
+	by mx.isp-customer.example with ESMTPS id 8KH2-20260915
+	for <steve@isp-customer.example>; Tue, 15 Sep 2026 18:22:09 -0400
+Date: Tue, 15 Sep 2026 18:22:00 -0400
+From: =?UTF-8?B?UGF5UGFsLCBZb3VyIGFjY291bnQgaXMgc3VzcGVuZGVk?= <account@secure-update.paypalbuy-verify.example>
+Reply-To: <verify@paypal-accounts-alert.example>
+To: steve@isp-customer.example
+Subject: Your account has been suspended
+Return-Path: <>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+
+Click here to restore your account: http://secure-update.paypalbuy-verify.example/restore

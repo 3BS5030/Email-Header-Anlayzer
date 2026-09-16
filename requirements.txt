@@ -1,0 +1,4 @@
+# Email Header Analyzer - Desktop has no third-party dependencies.
+# It uses only the Python standard library (email, tkinter, re, base64, unittest).
+#
+# Requires Python 3.9 or newer.
